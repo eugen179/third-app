@@ -1,19 +1,21 @@
-import React from 'react';
-import Car from './Components/Car';
 import mazdaImage from './Images/mazda.jpg';
 import toyotaImage from './Images/camry.jpg';
 import hondaImage from './Images/honda.jpg';
 import fordImage from './Images/ford.jpg';
-import './App.css'; // Make sure to import your CSS file
+import rav4Image from './Images/rav4.jpg'; 
+import harrierImage from './Images/harrier.jpg'; 
+import gleImage from './Images/gle.jpg'; 
+import './App.css'; 
+import Car from './Components/Car';
 
 const App = () => {
     const carData = [
         {
-            make: "Mazda",
-            model: "CX-5",
-            year: "2022",
-            color: "Red",
-            image: mazdaImage 
+            make: "Honda",
+            model: "Civic",
+            year: "2020",
+            color: "Black",
+            image: mazdaImage
         },
         {
             make: "Toyota",
@@ -35,7 +37,35 @@ const App = () => {
             year: "2019",
             color: "Yellow",
             image: fordImage 
-        }
+        },
+        {
+            make: "Toyota",
+            model: "RAV4",
+            year: "2022",
+            color: "Gray",
+            image: rav4Image
+        },
+        {
+            make: "Toyota",
+            model: "Harrier",
+            year: "2021",
+            color: "Black",
+            image: harrierImage
+        },
+        {
+            make: "Mercedes-Benz",
+            model: "GLE",
+            year: "2020",
+            color: "White",
+            image: gleImage
+        },
+        {
+            make: "Honda",
+            model: "CR-V",
+            year: "2021",
+            color: "Black",
+            image: hondaImage 
+        },
     ];
 
     return (

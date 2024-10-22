@@ -1,35 +1,56 @@
-/* App.css */
 body {
-  font-family: Arial, sans-serif; /* Set a basic font */
-  margin: 0; /* Remove default margin */
-  padding: 20px; /* Add some padding around the content */
-  background-color: #f4f4f4; /* Light background color */
+  font-family: 'Arial', sans-serif; 
+  margin: 0; 
+  padding: 20px; 
+  background-color: #e9ecef; 
 }
 
 h1 {
-  text-align: center; /* Center the heading */
-  margin-bottom: 20px; /* Spacing below the heading */
+  text-align: center; 
+  margin-bottom: 30px; 
+  color: #343a40; 
+  font-size: 2.5em; 
+  text-transform: uppercase; 
 }
 
 .car-container {
-  display: flex; /* Use flexbox for the layout */
-  flex-wrap: wrap; /* Allow wrapping to the next line when necessary */
-  justify-content: space-between; /* Space items evenly */
-  margin: 0 -10px; /* Compensate for the margin on car items */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  margin: 0 -10px; 
 }
 
 .car {
-  flex: 1 1 calc(25% - 20px); /* Each car will take up to 25% of the container width, minus margins */
-  margin: 10px; /* Space around each car */
-  border: 1px solid #ccc; /* Optional: adds a border */
-  padding: 10px; /* Optional: adds padding */
-  text-align: center; /* Centers text within each car */
-  background-color: white; /* Background color for car items */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  box-sizing: border-box; /* Includes padding/border in width calculation */
+  flex: 1 1 calc(25% - 20px); 
+  margin: 10px; 
+  border-radius: 8px; 
+  border: 1px solid #ced4da; 
+  padding: 15px; 
+  text-align: center; 
+  background-color: white; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.car:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); 
 }
 
 img {
-  max-width: 100%; /* Responsive image size */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+.car h2 {
+  font-size: 1.5em; 
+  color: #495057; 
+  margin: 10px 0; 
+}
+
+.car p {
+  margin: 5px 0; 
+  color: #6c757d; 
+  font-size: 1em; 
 }
