@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+/* App.css */
+body {
+  font-family: Arial, sans-serif; /* Set a basic font */
+  margin: 0; /* Remove default margin */
+  padding: 20px; /* Add some padding around the content */
+  background-color: #f4f4f4; /* Light background color */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Spacing below the heading */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.car-container {
+  display: flex; /* Use flexbox for the layout */
+  flex-wrap: wrap; /* Allow wrapping to the next line when necessary */
+  justify-content: space-between; /* Space items evenly */
+  margin: 0 -10px; /* Compensate for the margin on car items */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.car {
+  flex: 1 1 calc(25% - 20px); /* Each car will take up to 25% of the container width, minus margins */
+  margin: 10px; /* Space around each car */
+  border: 1px solid #ccc; /* Optional: adds a border */
+  padding: 10px; /* Optional: adds padding */
+  text-align: center; /* Centers text within each car */
+  background-color: white; /* Background color for car items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-sizing: border-box; /* Includes padding/border in width calculation */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  max-width: 100%; /* Responsive image size */
+  height: auto; /* Maintain aspect ratio */
 }
