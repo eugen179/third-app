@@ -11,10 +11,10 @@ import Car from './Components/Car';
 const App = () => {
     const carData = [
         {
-            make: "Honda",
-            model: "Civic",
+            make: " Toyota",
+            model: "CX-5",
             year: "2020",
-            color: "Black",
+            color: "Red",
             image: mazdaImage
         },
         {
